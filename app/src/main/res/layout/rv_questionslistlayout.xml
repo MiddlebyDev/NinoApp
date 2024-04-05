@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_horizontal|center_vertical">
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="01"/>
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_below="@id/tv_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#09263d"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_question"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnServicio"
+                android:layout_width="78dp"
+                android:layout_height="65dp"
+                android:adjustViewBounds="true"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:tint="#8BC34A"
+                app:srcCompat="@drawable/nolike" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/btnServicioN"
+                android:layout_width="78dp"
+                android:layout_height="65dp"
+                android:adjustViewBounds="true"
+                android:onClick="timerManos"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:tint="#FF5722"
+                app:srcCompat="@drawable/nolikeverde" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
